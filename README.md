@@ -9,8 +9,8 @@ Utility monitors are analogous to pseudo L2 caches with entire ways for their re
 * An Auxiliary Tag Directory (ATD) implemented as a 2D-array [32][16].
 * 16 hit counters for 16 ways - a 1D array of 16 elements.
 * Part Data - a structure to populate data needed for partitioning.
-** Number of ways for core0.
-** Total utility.
+  * Number of ways for core0.
+  * Total utility.
 ## Monitoring data - 
 * One of every 32 sets of L2 cache is sampled and a total of 32 sets are monitored by Umon. This means on every L2 access if the set is one among the 32 that are sampled, it will also result in Umon access. (setIndex%32 == 0)
 * For each set, tags in ATD are arranged from MRU (most recently used) to LRU (least recently used) positions.
