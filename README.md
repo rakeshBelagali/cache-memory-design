@@ -1,10 +1,10 @@
 # cache-memory-design
 ![alt text](https://github.com/rakeshBelagali/cache-memory-design/blob/master/Screen%20Shot%202018-01-02%20at%207.31.32%20PM.png)
 
-```
+
 # Implementation
 
-```
+
 ● Refer​ ​umon.c​ ​and​ ​umon.h​ ​files.
 ● Set​ ​up​ ​one​ ​utility​ ​monitor​ ​(Umon)​ ​for​ ​each​ ​core.
 ● Utility​ ​monitors​ ​are​ ​analogous​ ​to​ ​pseudo​ ​L2​ ​caches​ ​with​ ​entire​ ​ways​ ​for​ ​their​ ​respective
@@ -35,4 +35,3 @@ least​ ​one​ ​way​ ​is​ ​given​ ​to​ ​each​ ​core).
 ○ The​ ​combination​ ​that​ ​results​ ​in​ ​the​ ​highest​ ​total​ ​utility​ ​is​ ​chosen​ ​and​ ​partitioning
 is​ ​done​ ​according​ ​to​ ​that​ ​until​ ​the​ ​next​ ​decision​ ​event.
 ○ Hit​ ​counters​ ​are​ ​halved​ ​at​ ​the​ ​end​ ​of​ ​each​ ​decision.
-```
