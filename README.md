@@ -15,7 +15,7 @@ Utility monitors are analogous to pseudo L2 caches with entire ways for their re
 * One of every 32 sets of L2 cache is sampled and a total of 32 sets are monitored by Umon. This means on every L2 access if the set is one among the 32 that are sampled, it will also result in Umon access. (setIndex%32 == 0)
 * For each set, tags in ATD are arranged from MRU (most recently used) to LRU (least recently used) positions.
 * Whenever a tag in a set of ATD is a hit, the hit counter of that corresponding way is incremented and it is moved to MRU position. This will just result in reshuffling to move that tag to MRU, nothing is evicted.
-But, if a tag is a miss, it is just inserted at MRU position of that set. NO hit counters are incremented. Tag in LRU position will be evicted.
+* But, if a tag is a miss, it is just inserted at MRU position of that set. NO hit counters are incremented. Tag in LRU position will be evicted.
 # Making the partitioning decision -
 * Decision is taken every few million cycles.
 * Utility of a core for x ways = sum of first ‘x’ hit counters starting from MRU.
